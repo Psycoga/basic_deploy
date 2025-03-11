@@ -18,3 +18,6 @@ jobs:
         #Creamos el directorio .ssh
             - name: Create .ssh directory
               run: mkdir -p ~/.ssh
+  
+            - name: Add remote host to known_hosts
+              run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
