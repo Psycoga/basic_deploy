@@ -11,7 +11,7 @@ git commit -m "build"
 gh repo create
 ```
 3. Creamos una app para desplegar
-´´´bash
+```bash
 npm i express
 npm install express
 ```
@@ -20,7 +20,6 @@ npm install express
 ```javascript
 const express = require('express');
 const app = express();
-
 app.get('/', (req, res) => {
     res.send('Hola mundo');
     });
