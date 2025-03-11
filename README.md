@@ -67,3 +67,9 @@ curl <ip>:3000
 ```bash
 pm2 start server.js --name <nombre>
 ```
+11. Comenzamos a crear el deploy, creamos la carpeta .github/workflows y dentro un archivo llamado deploy.yml
+```bash
+.github
+└── workflows
+    └── deploy.yml
+```
