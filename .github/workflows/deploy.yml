@@ -25,4 +25,4 @@ jobs:
             - name: Execute command on VPS
               env:
                 SSHPASS: ${{ secrets.SSH_PASSWORD }}
-              run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "pm2 stop basic_deploy; cd basic_deploy; git pull; npm i; pm2 start basic_deploy;"
+              run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "pm2 stop basic_deploy && cd basic_deploy && git pull && npm i && pm2 start basic_deploy&"
