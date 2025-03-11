@@ -37,3 +37,10 @@ app.listen(3000, () => {
 node server.js
 curl localhost:3000
 ```
+7. Lanzamos nuestro vps, y lanzamos los secretos de github
+
+```
+SSH_HOST=ip
+SSH_USER=usuario
+SSH_PASSWORD=contraseña
+```
